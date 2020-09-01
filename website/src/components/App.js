@@ -5,6 +5,10 @@ import Features from './Features';
 import CenterColumn from './CenterColumn';
 import A from './A';
 
+const Container = styled.div`
+  padding-bottom: 2.5rem;
+`;
+
 const CodeSandbox = styled.iframe.attrs({
   src:
     'https://codesandbox.io/embed/telereact-example-cecwo?fontsize=14&hidenavigation=1&theme=dark',
@@ -23,7 +27,7 @@ const CodeSandbox = styled.iframe.attrs({
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <Banner />
       <Features />
       <CenterColumn>
@@ -77,7 +81,7 @@ const App = () => {
           <code>{`{ a: { b: 2, c: 4 } }`}</code>. Note that you cannot deep merge array elements.
         </p>
       </CenterColumn>
-    </div>
+    </Container>
   );
 };
 
