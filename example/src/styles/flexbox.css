@@ -1,0 +1,99 @@
+html,
+body,
+a,
+div,
+form,
+header,
+input,
+label,
+textarea {
+  /* https://github.com/necolas/react-native-web/blob/0e81c6ef2758d4ca9b2099b1d04a4f8c417f0f43/packages/benchmarks/src/implementations/styled-components/View.js */
+  align-items: stretch;
+  border-width: 0;
+  border-style: solid;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+}
+
+.f {
+  flex: 1;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.xy {
+  justify-content: center;
+  align-items: center;
+}
+
+.fsz {
+  flex-shrink: 0;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* aifs takes priority over aic and aefe because of this ordering.
+Only needed cuz <SpacedContainer row /> has aic by default */
+.aic {
+  align-items: center;
+}
+
+.aife {
+  align-items: flex-end;
+}
+
+.aifs {
+  align-items: flex-start;
+}
+
+.asfs {
+  align-self: flex-start;
+}
+
+.asc {
+  align-self: center;
+}
+
+.asfe {
+  align-self: flex-end;
+}
+
+.jcfs {
+  justify-content: flex-start;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.jcse {
+  justify-content: space-evenly;
+}
+
+.jcsb {
+  justify-content: space-between;
+}

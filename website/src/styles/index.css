@@ -1,0 +1,68 @@
+p code,
+span code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(108, 109, 110, 0.1);
+  border-radius: 6px;
+  /* white-space: nowrap; */
+}
+
+h1,
+h2,
+h3,
+li,
+p,
+span,
+a,
+input,
+textarea,
+body {
+  margin: 0;
+  /* https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat:wght@400;500 */
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.35rem;
+}
+
+p,
+:not(p) > code {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.tac {
+  text-align: center;
+}
+
+.mt25 {
+  margin-top: 0.25rem;
+}
+
+.b {
+  border: 1px solid red;
+}
+
+.o {
+  outline: 1px solid red;
+}

@@ -1,0 +1,46 @@
+html {
+  background-color: #efefef;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+a,
+input,
+button,
+body {
+  margin: 0;
+  /* https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat:wght@400;500 */
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+p,
+button,
+input {
+  line-height: 1.5;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+a,
+span.button {
+  cursor: pointer;
+  color: inherit;
+  font-weight: 700;
+  display: inline;
+  text-decoration: underline;
+}
+
+.o {
+  outline: 1px solid red;
+}
+
+.b {
+  border: 1px solid red;
+}
