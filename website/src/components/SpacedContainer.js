@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const SpacedContainer = styled.div.attrs(({ row }) => ({
   className: row ? 'row wrap aic' : '',
