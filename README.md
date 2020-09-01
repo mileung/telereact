@@ -7,22 +7,41 @@
 ## Install
 
 ```bash
-npm install --save telereact
+npm install telereact
 ```
 
-## Usage
+## Documentation
+
+[telereact.com](https://telereact/com)
+
+## Basic usage
 
 ```jsx
-import React, { Component } from 'react'
+import { Provider, connect } from 'telereact';
 
-import MyComponent from 'telereact'
-import 'telereact/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const App = () => (
+  <Provider initialState={{ a: 1, b: { c: 3, d: 0 } }}>
+    <Router />
+  </Provider>
+);
+// ...
+const Container = ({ setState, a, b }) => (
+  <div>
+    <button onClick={() => setState({ a: a + 1 })} />
+    <p>a: {a}</p>
+    <button
+      onClick={() =>
+        setState(
+          { b: { c: b.c + 1 } }, // This setState call will not change b.d
+          { deepMerge: true }, // because the meta object has deepMerge: true
+        )
+      }
+    />
+    <p>b.c: {b.c}</p>
+    <p>b.d: {b.d}</p>
+  </div>
+);
+export default connect('a, b')(Container);
 ```
 
 ## License
