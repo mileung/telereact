@@ -1,6 +1,6 @@
 {
   "name": "telereact",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The most elegant state manager for React apps",
   "author": "MiLeung",
   "license": "MIT",
@@ -49,5 +49,15 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "redux",
+    "mobx",
+    "recoil",
+    "setState",
+    "elegant",
+    "state",
+    "management"
   ]
 }

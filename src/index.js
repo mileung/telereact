@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types'; // not sure how to NOT include this in the bundle, so just gonna leave it out to save weight.
 
 export const isObject = v => v !== null && typeof v === 'object';
 
@@ -40,11 +40,11 @@ export const deepMerge = (target, source) => {
 const Context = React.createContext();
 
 export class Provider extends React.Component {
-  static propTypes = {
-    initialState: PropTypes.object,
-    onSetState: PropTypes.func,
-    observers: PropTypes.object,
-  };
+  // static propTypes = {
+  //   initialState: PropTypes.object,
+  //   onSetState: PropTypes.func,
+  //   observers: PropTypes.object,
+  // };
 
   static defaultPropTypes = { initialState: {} };
 

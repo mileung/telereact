@@ -37,7 +37,7 @@ const Features = React.memo(() => {
     <FeatureContainer>
       <Feature
         headline="Lightweight"
-        details="The Telereact module is less than 150 lines of code (2.2kB minified)."
+        details="The Telereact module is less than 150 lines of code (3kB minified)."
       />
       <Feature
         headline="Simple"
