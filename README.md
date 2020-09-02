@@ -12,7 +12,7 @@ npm install telereact
 
 ## Documentation
 
-[telereact.com](https://telereact/com)
+[telereact.com](https://telereact.com)
 
 ## Basic usage
 
