@@ -74,11 +74,16 @@ const App = () => {
           Every connected component will have <code>setState</code> passed as a prop.{' '}
           <code>setState</code> is a function that takes an updated state object and optional meta
           object as arguments. Passing a single object to <code>setState</code> will assign its
-          properties to the global state. If you want to update deeply nested state properties
-          without overwriting any other properties, you can add <code>deepMerge: true</code> to the
-          meta object like <code>{`setState({ a: { c: 4 } }, { deepMerge: true })`}</code> and that
-          will update the global state from something like <code>{`{ a: { b: 2 } }`}</code> to{' '}
-          <code>{`{ a: { b: 2, c: 4 } }`}</code>. Note that you cannot deep merge array elements.
+          properties to the global state.
+        </p>
+        <h4 className="mt25">deepMerge</h4>
+        <p>
+          To update deeply nested state properties without overwriting any other properties, you can
+          add <code>deepMerge: true</code> to the meta object like{' '}
+          <code>{`setState({ a: { c: 4 } }, { deepMerge: true })`}</code>. This will update the
+          global state from something like: <code>{`{ a: { b: 2 } }`}</code> to{' '}
+          <code>{`{ a: { b: 2, c: 4 } }`}</code>. Note that you cannot deep merge values into
+          arrays.
         </p>
       </CenterColumn>
     </Container>
